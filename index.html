@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivansh Education Hub | Learn • Teach • Connect • Grow</title>
+<meta name="description" content="Shivansh Education Hub connects students, parents, teachers, home tuition providers, schools and coaching institutes for tuition and teaching opportunities in Sitamarhi and nearby areas.">
+<meta name="keywords" content="Shivansh Education Hub, tuition Sitamarhi, home tuition Sitamarhi, teacher vacancy Sitamarhi, school teacher vacancy, coaching teacher vacancy, tutor">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#182235;background:#f6f8fc;line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e7ebf2}
+.nav{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:900;color:#155eef}.logo span{color:#182235}
+nav a{margin-left:17px;text-decoration:none;color:#374151;font-weight:700}
+.hero{background:linear-gradient(135deg,#155eef,#7657e8);color:#fff;padding:78px 20px}
+.wrap{max-width:1150px;margin:auto}
+.hero .tag{font-weight:700;opacity:.95}
+.hero h1{font-size:50px;line-height:1.08;margin:14px 0}
+.hero p{font-size:19px;max-width:760px;opacity:.95}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:13px 19px;border-radius:10px;text-decoration:none;font-weight:800;border:0;cursor:pointer;font-size:15px}
+.white{background:#fff;color:#155eef}.outline{color:#fff;border:1px solid #ffffff80;background:#ffffff10}
+section{padding:65px 20px}.blue{background:#edf3ff}
+.title{text-align:center;margin-bottom:35px}.title h2{font-size:34px}.title p{color:#667085;margin-top:5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.box,form{background:#fff;border:1px solid #e3e8f0;border-radius:18px;padding:26px;box-shadow:0 8px 25px #0000000b}
+.icon{font-size:31px;margin-bottom:8px}.box p{color:#667085;margin-top:6px}
+.forms{display:grid;grid-template-columns:1fr 1fr;gap:23px}
+label{display:block;font-weight:700;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cfd7e3;border-radius:8px;font-size:15px}
+textarea{min-height:85px;resize:vertical}
+form .btn{width:100%;margin-top:17px;background:#155eef;color:#fff}
+.note{text-align:center;color:#667085;font-size:13px;margin-top:14px}
+footer{background:#101827;color:#cbd5e1;text-align:center;padding:30px 20px}
+footer strong{color:#fff}
+@media(max-width:800px){nav{display:none}.grid,.forms{grid-template-columns:1fr}.hero h1{font-size:39px}section{padding:55px 17px}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">Shivansh <span>Education Hub</span></div>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#student">Student</a><a href="#teacher">Teacher</a><a href="#vacancy">Vacancy</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="wrap">
+<div class="tag">📍 Sitamarhi & nearby areas</div>
+<h1>Learn • Teach • Connect • Grow</h1>
+<p>A simple education platform connecting students and parents with tutors, teachers with opportunities, and schools or coaching institutes with teaching candidates.</p>
+<div class="buttons">
+<a class="btn white" href="#student">🎓 I Need a Tutor</a>
+<a class="btn outline" href="#teacher">👨‍🏫 I Am a Teacher</a>
+<a class="btn outline" href="#vacancy">🏫 Post a Vacancy</a>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="title"><h2>Our Services</h2><p>One place for tuition enquiries and teaching opportunities.</p></div>
+<div class="grid">
+<div class="box"><div class="icon">🎓</div><h3>Student / Parent</h3><p>Find home or online tuition for school classes, all subjects, JEE and NEET preparation.</p></div>
+<div class="box"><div class="icon">👨‍🏫</div><h3>Teacher / Tutor</h3><p>Register your teaching details and let us know what classes, subjects and areas you can teach.</p></div>
+<div class="box"><div class="icon">🏫</div><h3>School / Coaching</h3><p>Schools, coaching centres and private tuition providers can share teacher vacancy requirements.</p></div>
+</div>
+</div>
+</section>
+
+<section class="blue" id="student">
+<div class="wrap">
+<div class="title"><h2>🎓 Student / Parent — Need a Tutor?</h2><p>Send your requirement directly on WhatsApp.</p></div>
+<div class="forms">
+<form onsubmit="student(event)">
+<h3>Tuition Requirement</h3>
+<label>Name</label><input id="sn" required placeholder="Student / Parent name">
+<label>Class / Level</label><select id="sc" required><option value="">Select</option><option>Class 1–5</option><option>Class 6–8</option><option>Class 9–10</option><option>Class 11–12 / Intermediate</option><option>JEE Preparation</option><option>NEET Preparation</option><option>Other</option></select>
+<label>Subject / Course</label><input id="ss" required placeholder="e.g. Mathematics, Physics, Biology">
+<label>Board / Exam</label><input id="sb" placeholder="CBSE / Bihar Board / JEE / NEET / Other">
+<label>Area</label><input id="sa" required placeholder="Area / locality">
+<label>Mode</label><select id="sm"><option>Home Tuition</option><option>Online Tuition</option><option>Either</option></select>
+<label>Preferred time</label><input id="st" placeholder="e.g. Evening">
+<label>Mobile number</label><input id="sp" type="tel" required>
+<label>Extra requirement</label><textarea id="sx" placeholder="Any other details"></textarea>
+<button class="btn" type="submit">Send Requirement on WhatsApp</button>
+</form>
+<div class="box"><h3>We can help with</h3><p>✔ Classes 1–12</p><p>✔ All school subjects</p><p>✔ CBSE / Bihar Board</p><p>✔ JEE / NEET preparation</p><p>✔ Home / Online tuition</p><p>✔ Sitamarhi & available nearby areas</p></div>
+</div>
+</div>
+</section>
+
+<section id="teacher">
+<div class="wrap">
+<div class="title"><h2>👨‍🏫 Teacher / Tutor Registration</h2><p>Teachers from different subjects and levels can contact us.</p></div>
+<div class="forms">
+<form onsubmit="teacher(event)">
+<h3>Join as Teacher / Tutor</h3>
+<label>Full name</label><input id="tn" required>
+<label>Qualification</label><input id="tq" required placeholder="e.g. B.Sc., B.Ed., M.Sc.">
+<label>Subjects</label><input id="ts" required placeholder="e.g. Maths, Physics, English">
+<label>Classes / Level</label><input id="tc" required placeholder="e.g. 1–12, JEE, NEET">
+<label>Board / Exam</label><input id="tb" placeholder="CBSE / Bihar Board / JEE / NEET / Other">
+<label>Teaching area</label><input id="ta" required>
+<label>Experience</label><input id="te" placeholder="e.g. 3 years">
+<label>Mode</label><select id="tm"><option>Home Tuition</option><option>Online Tuition</option><option>Both</option></select>
+<label>Mobile number</label><input id="tp" type="tel" required>
+<button class="btn" type="submit">Register via WhatsApp</button>
+</form>
+<div class="box"><h3>Who can join?</h3><p>✔ School subject teachers</p><p>✔ Home tutors</p><p>✔ Online teachers</p><p>✔ JEE / NEET educators</p><p>✔ Primary, secondary & intermediate-level teachers</p><p>✔ Teachers for different subjects</p><p class="note">Please provide accurate qualification and experience details.</p></div>
+</div>
+</div>
+</section>
+
+<section class="blue" id="vacancy">
+<div class="wrap">
+<div class="title"><h2>🏫 School / Coaching / Private Tuition Vacancy</h2><p>Institutes can send teacher vacancy requirements.</p></div>
+<div class="forms">
+<form onsubmit="vacancy(event)">
+<h3>Post a Teacher Requirement</h3>
+<label>Institute name</label><input id="in" required placeholder="School / Coaching / Tuition name">
+<label>Contact person</label><input id="ic" required>
+<label>Location</label><input id="il" required>
+<label>Subject</label><input id="is" required placeholder="e.g. Maths / Physics">
+<label>Class / Level</label><input id="icl" required placeholder="e.g. 6–10 / 11–12 / JEE">
+<label>Teacher qualification</label><input id="iq" placeholder="Required qualification">
+<label>Experience required</label><input id="ie" placeholder="e.g. 2 years">
+<label>Job type</label><select id="ij"><option>Full-time</option><option>Part-time</option><option>Both</option></select>
+<label>Payment / salary</label><input id="ipay" placeholder="Optional">
+<label>Contact number</label><input id="ip" type="tel" required>
+<label>Other details</label><textarea id="ix"></textarea>
+<button class="btn" type="submit">Send Vacancy on WhatsApp</button>
+</form>
+<div class="box"><h3>For Institutes</h3><p>Schools, coaching centres and private tuition providers can contact Shivansh Education Hub when a teaching position is available.</p><p style="margin-top:15px"><b>Business WhatsApp:</b><br>8294547198</p><p><b>Phone:</b><br>6206775077</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<div class="title"><h2>Contact Shivansh Education Hub</h2><p>Learn • Teach • Connect • Grow</p></div>
+<div class="grid">
+<div class="box"><div class="icon">💬</div><h3>WhatsApp</h3><p><a href="https://wa.me/918294547198">8294547198</a></p></div>
+<div class="box"><div class="icon">📞</div><h3>Phone</h3><p><a href="tel:+916206775077">6206775077</a></p></div>
+<div class="box"><div class="icon">📍</div><h3>Service Area</h3><p>Sitamarhi, Bihar and nearby areas as available.</p></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><strong>Shivansh Education Hub</strong></p>
+<p>Learn • Teach • Connect • Grow</p>
+<p>Students • Tutors • Schools • Coaching Institutes</p>
+<p>© 2026 Shivansh Education Hub</p>
+</footer>
+
+<script>
+const WA="918294547198";
+function send(text){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text),"_blank")}
+function student(e){e.preventDefault();send("Hello Shivansh Education Hub, I need a tutor.%0AName: "+sn.value+"%0AClass/Level: "+sc.value+"%0ASubject/Course: "+ss.value+"%0ABoard/Exam: "+sb.value+"%0AArea: "+sa.value+"%0AMode: "+sm.value+"%0APreferred time: "+st.value+"%0AMobile: "+sp.value+"%0AExtra: "+sx.value)}
+function teacher(e){e.preventDefault();send("Hello Shivansh Education Hub, I want to register as a teacher/tutor.%0AName: "+tn.value+"%0AQualification: "+tq.value+"%0ASubjects: "+ts.value+"%0AClasses/Level: "+tc.value+"%0ABoard/Exam: "+tb.value+"%0AArea: "+ta.value+"%0AExperience: "+te.value+"%0AMode: "+tm.value+"%0AMobile: "+tp.value)}
+function vacancy(e){e.preventDefault();send("Hello Shivansh Education Hub, we have a teacher vacancy.%0AInstitute: "+document.getElementById("in").value+"%0AContact person: "+ic.value+"%0ALocation: "+il.value+"%0ASubject: "+is.value+"%0AClass/Level: "+icl.value+"%0AQualification: "+iq.value+"%0AExperience: "+ie.value+"%0AJob type: "+ij.value+"%0APayment/Salary: "+ipay.value+"%0AContact: "+ip.value+"%0AOther details: "+ix.value)}
+</script>
+</body>
+</html>
