@@ -175,12 +175,51 @@ footer strong{color:#fff}
 <p>© 2026 Shivansh Education Hub</p>
 </footer>
 
+
 <script>
-const WA="918294547198";
-function send(text){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text),"_blank")}
-function student(e){e.preventDefault();send("Hello Shivansh Education Hub, I need a tutor.%0AName: "+sn.value+"%0AClass/Level: "+sc.value+"%0ASubject/Course: "+ss.value+"%0ABoard/Exam: "+sb.value+"%0AArea: "+sa.value+"%0AMode: "+sm.value+"%0APreferred time: "+st.value+"%0AMobile: "+sp.value+"%0AExtra: "+sx.value)}
-function teacher(e){e.preventDefault();send("Hello Shivansh Education Hub, I want to register as a teacher/tutor.%0AName: "+tn.value+"%0AQualification: "+tq.value+"%0ASubjects: "+ts.value+"%0AClasses/Level: "+tc.value+"%0ABoard/Exam: "+tb.value+"%0AArea: "+ta.value+"%0AExperience: "+te.value+"%0AMode: "+tm.value+"%0AMobile: "+tp.value)}
-function vacancy(e){e.preventDefault();send("Hello Shivansh Education Hub, we have a teacher vacancy.%0AInstitute: "+document.getElementById("in").value+"%0AContact person: "+ic.value+"%0ALocation: "+il.value+"%0ASubject: "+is.value+"%0AClass/Level: "+icl.value+"%0AQualification: "+iq.value+"%0AExperience: "+ie.value+"%0AJob type: "+ij.value+"%0APayment/Salary: "+ipay.value+"%0AContact: "+ip.value+"%0AOther details: "+ix.value)}
+const WA = "918294547198";
+
+function send(text) {
+  window.open(
+    "https://wa.me/" + WA + "?text=" + encodeURIComponent(text),
+    "_blank"
+  );
+}
+
+function student(e) {
+  e.preventDefault();
+
+  send(
+    "Hello Shivansh Education Hub, I need a tutor.\n" +
+    "Name: " + document.getElementById("sn").value + "\n" +
+    "Class/Level: " + document.getElementById("sc").value + "\n" +
+    "Subject/Course: " + document.getElementById("ss").value + "\n" +
+    "Board/Exam: " + document.getElementById("sb").value + "\n" +
+    "Area: " + document.getElementById("sa").value + "\n" +
+    "Mode: " + document.getElementById("sm").value + "\n" +
+    "Preferred time: " + document.getElementById("st").value + "\n" +
+    "Mobile: " + document.getElementById("sp").value + "\n" +
+    "Extra: " + document.getElementById("sx").value
+  );
+}
+
+function teacher(e) {
+  e.preventDefault();
+
+  send(
+    "Hello Shivansh Education Hub, I want to register as a teacher/tutor.\n" +
+    "Name: " + document.getElementById("tn").value + "\n" +
+    "Qualification: " + document.getElementById("tq").value + "\n" +
+    "Subjects: " + document.getElementById("ts").value + "\n" +
+    "Classes/Level: " + document.getElementById("tc").value + "\n" +
+    "Board/Exam: " + document.getElementById("tb").value + "\n" +
+    "Area: " + document.getElementById("ta").value + "\n" +
+    "Experience: " + document.getElementById("te").value + "\n" +
+    "Mode: " + document.getElementById("tm").value + "\n" +
+    "Mobile: " + document.getElementById("tp").value
+  );
+}
 </script>
+
 </body>
 </html>
