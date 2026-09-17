@@ -190,15 +190,12 @@ function student(e) {
 
   send(
     "Hello Shivansh Education Hub, I need a tutor.\n" +
-    "Name: " + document.getElementById("sn").value + "\n" +
-    "Class/Level: " + document.getElementById("sc").value + "\n" +
-    "Subject/Course: " + document.getElementById("ss").value + "\n" +
-    "Board/Exam: " + document.getElementById("sb").value + "\n" +
+    "Student Name: " + document.getElementById("sn").value + "\n" +
+    "Class: " + document.getElementById("sc").value + "\n" +
+    "Subject: " + document.getElementById("ss").value + "\n" +
+    "Board: " + document.getElementById("sb").value + "\n" +
     "Area: " + document.getElementById("sa").value + "\n" +
-    "Mode: " + document.getElementById("sm").value + "\n" +
-    "Preferred time: " + document.getElementById("st").value + "\n" +
-    "Mobile: " + document.getElementById("sp").value + "\n" +
-    "Extra: " + document.getElementById("sx").value
+    "Mobile: " + document.getElementById("sm").value
   );
 }
 
@@ -206,16 +203,32 @@ function teacher(e) {
   e.preventDefault();
 
   send(
-    "Hello Shivansh Education Hub, I want to register as a teacher/tutor.\n" +
+    "Hello Shivansh Education Hub, I want to register as a tutor.\n" +
     "Name: " + document.getElementById("tn").value + "\n" +
     "Qualification: " + document.getElementById("tq").value + "\n" +
     "Subjects: " + document.getElementById("ts").value + "\n" +
-    "Classes/Level: " + document.getElementById("tc").value + "\n" +
-    "Board/Exam: " + document.getElementById("tb").value + "\n" +
+    "Classes: " + document.getElementById("tc").value + "\n" +
+    "Board: " + document.getElementById("tb").value + "\n" +
     "Area: " + document.getElementById("ta").value + "\n" +
-    "Experience: " + document.getElementById("te").value + "\n" +
-    "Mode: " + document.getElementById("tm").value + "\n" +
-    "Mobile: " + document.getElementById("tp").value
+    "Mobile: " + document.getElementById("tm").value
+  );
+}
+
+function vacancy(e) {
+  e.preventDefault();
+
+  send(
+    "Hello Shivansh Education Hub, we have a teaching vacancy.\n" +
+    "Institute Name: " + document.getElementById("in").value + "\n" +
+    "Institute Type: " + document.getElementById("ic").value + "\n" +
+    "Location: " + document.getElementById("il").value + "\n" +
+    "Subject: " + document.getElementById("is").value + "\n" +
+    "Class: " + document.getElementById("icl").value + "\n" +
+    "Qualification: " + document.getElementById("iq").value + "\n" +
+    "Experience: " + document.getElementById("ie").value + "\n" +
+    "Job Type: " + document.getElementById("ij").value + "\n" +
+    "Salary: " + document.getElementById("ipay").value + "\n" +
+    "Mobile: " + document.getElementById("ip").value
   );
 }
 </script>
